@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{F1841D1E-6315-4567-B61A-856025A5092C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql", "mysql", "{901DFC8B-1069-40BD-87EB-2E5A3F82272C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blazor_ui", "blazor_ui", "{B358162B-4209-40EE-8C2D-A0949FF49902}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "api\api.csproj", "{64D54238-0825-4176-BC72-A003D9D30D9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blazor_ui", "blazor_ui\blazor_ui.csproj", "{5AF388EE-1FD2-4484-8EBE-14D163D88EEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mysql", "mysql\mysql.csproj", "{88561F0F-C6CE-457E-8116-D289B9B60E96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D54238-0825-4176-BC72-A003D9D30D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D54238-0825-4176-BC72-A003D9D30D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D54238-0825-4176-BC72-A003D9D30D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D54238-0825-4176-BC72-A003D9D30D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF388EE-1FD2-4484-8EBE-14D163D88EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF388EE-1FD2-4484-8EBE-14D163D88EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF388EE-1FD2-4484-8EBE-14D163D88EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF388EE-1FD2-4484-8EBE-14D163D88EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88561F0F-C6CE-457E-8116-D289B9B60E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88561F0F-C6CE-457E-8116-D289B9B60E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88561F0F-C6CE-457E-8116-D289B9B60E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88561F0F-C6CE-457E-8116-D289B9B60E96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64D54238-0825-4176-BC72-A003D9D30D9D} = {F1841D1E-6315-4567-B61A-856025A5092C}
+		{5AF388EE-1FD2-4484-8EBE-14D163D88EEA} = {B358162B-4209-40EE-8C2D-A0949FF49902}
+		{88561F0F-C6CE-457E-8116-D289B9B60E96} = {901DFC8B-1069-40BD-87EB-2E5A3F82272C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD982152-CE98-4FE6-A3FC-393EC0043677}
+	EndGlobalSection
+EndGlobal

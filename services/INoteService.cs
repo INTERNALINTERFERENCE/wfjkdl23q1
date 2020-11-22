@@ -10,9 +10,9 @@ namespace services
     public interface INoteService
     {
         Users CreateUser(Users user);
-        Users GetUsers(int id);
+        Users GetUser(int id);
         List<Users> GetUsers();
-        void DeleteUser();
+        void DeleteUser(int id);
         void EditUser(Users users);
     }
 }

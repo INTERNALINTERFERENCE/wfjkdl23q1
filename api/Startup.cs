@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using mysql.Data;
+using services;
 
 namespace api
 {
@@ -28,6 +29,7 @@ namespace api
         {
             services.AddControllers();
             services.AddDbContext<MysqlDbContext>();
+            services.AddTransient<INoteService, NotesServices>();
             services.AddCors();
         }
 

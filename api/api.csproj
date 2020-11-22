@@ -18,6 +18,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\mysql\mysql.csproj" />
+      <ProjectReference Include="..\services\services.csproj" />
     </ItemGroup>
 
 

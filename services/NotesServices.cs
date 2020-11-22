@@ -1,4 +1,5 @@
-﻿using mysql.Data.Models;
+﻿using mysql.Data;
+using mysql.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,26 @@ namespace services
 {
     public class NotesServices : INoteService
     {
-        public Users CreateUser(Users user)
+        private MysqlDbContext _context;
+
+        public NotesServices(MysqlDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public void DeleteUser()
+        public Users CreateUser(Users user)
         {
-            throw new NotImplementedException();
+            _context.Add(user);
+            _context.SaveChanges();
+
+            return user;
+        }
+
+        public void DeleteUser(int id)
+        {
+            var user = _context.Users.First(n => n.Id == id);
+            _context.Users.Remove(user);
+            _context.SaveChanges();
         }
 
         public void EditUser(Users users)
@@ -24,14 +37,14 @@ namespace services
             throw new NotImplementedException();
         }
 
-        public Users GetUsers(int id)
+        public Users GetUser(int id)
         {
-            throw new NotImplementedException();
+            return _context.Users.First(n => n.Id == id);
         }
 
         public List<Users> GetUsers()
         {
-            throw new NotImplementedException();
+            return _context.Users.ToList();
         }
     }
 }

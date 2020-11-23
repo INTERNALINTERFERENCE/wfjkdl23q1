@@ -8,7 +8,8 @@ const axiosInstance = axios.create({
 export const GetNotes = async (dispatch) => {
     try{
         const {data} = await axiosInstance.get('https://localhost:5001/api/values');
-        dispatch(ActionCreators.setNotes(data));
+        const names = data.map(({ fname  }) => ({ fname }));
+        dispatch(ActionCreators.setNotes(names));
     }catch{
         console.log('Error!');
     }
